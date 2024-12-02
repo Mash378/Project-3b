@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title>ShelfNavigator</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="title">
+            <h1 class="logo"><span style="color: #343741;">Shelf</span><span style="color: #fa4616;">Navi</span><span style="color: #0021a5;">Gator</span></h1>
+        </div>
+
+        <form id="form">
+            <div class="search">
+                <input class="booksrch" id="booktitle" type="text" placeholder="Enter Book Title" required>
+                <input class="authorsrch" id="author" type="text" placeholder="Enter Author" required>
+                <button class="srchbtn" type ="submit"><span style="color: #343741;">Search</span></button>
+            </div>
+        </form>
+        
+    </div>
+
+    <script>
+        const form = document.getElementById('form');
+        const booktitle = document.getElementById('booktitle');
+        const author = document.getElementById('author');
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const booktitleValue = booktitle.value;
+            const authorValue = author.value;
+            
+            localStorage.setItem('booktitle', booktitleValue);
+            localStorage.setItem('author', authorValue);
+
+            window.location.href = "index2.html";
+        })
+    </script>
+
+</body>
+</html>

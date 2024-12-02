@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ShelfNavigator2</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <h1 class="book"><span style="color: #343741;">Book: "<span id="booktitle"></span>", <span id="author"></span></span></h1>
+    <h2 class="similar"><span style="color: #51545e;">Similar Books: </span></h2>
+    <div>
+        <a href="index.html"><button class="backbtn" type ="back">Back to Search</button></a>
+    </div>
+
+    <script>
+        const booktitle = localStorage.getItem('booktitle');
+        const author = localStorage.getItem('author');
+        document.getElementById('booktitle').textContent = booktitle;
+        document.getElementById('author').textContent = author;
+    </script>
+
+</body>
+</html>

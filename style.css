@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width:100%;
+    background-image: url(background.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}
+
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.title{
+    margin: auto;
+    width: 800px;
+    height: 100px;
+    padding-top: 270px;
+}
+
+.logo{
+    text-align: center;
+    color: white;
+    font-size: 100px;
+    font-family: Arial;
+}
+
+.search{
+    width: 550px;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.booksrch{
+    font-family: 'Arial';
+    width: 190px;
+    height: 19px;
+    background: white;
+    border: 1px solid white;
+    margin-top: 13px;
+    color: black;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.authorsrch{
+    font-family: 'Arial';
+    width: 190px;
+    height: 19px;
+    background: white;
+    border: 1px solid white;
+    margin-top: 13px;
+    color: black;
+    border-right: none;
+    font-size: 16px;
+    padding: 10px;
+    float: left;
+    margin-left: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.srchbtn{
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    background: white;
+    border: 2px solid white;
+    margin-top: 13px;
+    color: black;
+    font-size: 15px;
+    font-family: 'Arial';
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-left: 5px;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.srch:focus{
+    outline:none;
+}

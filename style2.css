@@ -1,0 +1,38 @@
+
+.book{
+    position: absolute;
+    top: 5px;
+    left: 8px;
+    margin: auto;
+    height: 100px;
+}
+
+.similar{
+    position: absolute;
+    left: 8px;
+    margin-top: 40px;
+    height: 100px;
+}
+
+.book_title{
+    text-align: left;
+    font-size: 70px;
+    font-family: Arial;
+}
+
+.backbtn{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 200px;
+    height: 40px;
+    background: #343741;
+    border: 2px solid #343741;
+    color: white;
+    font-size: 15px;
+    font-family: 'Arial';
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
