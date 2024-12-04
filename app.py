@@ -5,13 +5,13 @@ import requests
 from flask import Flask, render_template
 
 categories = [
-    "goodreads_books_children.json",
-    "goodreads_books_comics_graphic.json",
-    "goodreads_books_fantasy_paranormal.json",
-    "goodreads_books_history_biography.json",
-    "goodreads_books_poetry.json",
-    "goodreads_books_young_adult.json",
-    "goodreads_books_mystery_thriller_crime.json"
+    "goodreads_books_children.json.gz",
+    "goodreads_books_comics_graphic.json.gz",
+    "goodreads_books_fantasy_paranormal.json.gz",
+    "goodreads_books_history_biography.json.gz",
+    "goodreads_books_poetry.json.gz",
+    "goodreads_books_young_adult.json.gz",
+    "goodreads_books_mystery_thriller_crime.json.gz"
 ]
 
 conn = sqlite3.connect("Books.db")
@@ -31,7 +31,7 @@ db.execute("""CREATE TABLE Books (
 books = {}  #adjacency list
 for category in categories:
     data=[]
-    with open(category,"r") as file:
+    with gzip.open(category, "rt", encoding="utf-8") as file:
         for line in file:
             data.append(json.loads(line.strip()))
         for datum in data:
