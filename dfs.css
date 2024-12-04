@@ -1,3 +1,27 @@
+.header{
+    position: absolute;
+    top: 5px;
+    left: 8px;
+    margin: auto;
+    height: 100px;
+    padding-top: 0px;
+    font-size: 50px;
+    font-family: 'Arial';
+}
+
+.list{
+    margin: auto;
+    padding-top: 50px;
+    font-family: 'Arial';
+}
+
+.time{
+    margin: auto;
+    padding-top: 230px;
+    font-family: 'Arial';
+    color: #343741;
+}
+
 .backbtn{
     position: absolute;
     right: 10px;

@@ -20,6 +20,13 @@
     font-family: Arial;
 }
 
+.graph{
+    margin: auto;
+    padding-left: 210px;
+    width: 770px;
+    height: 1000px;
+}
+
 
 .backbtn{
     position: absolute;
