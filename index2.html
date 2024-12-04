@@ -8,17 +8,21 @@
 
 <body>
     <div>
+        <!--headers to display the book title and author gathered from previous page-->
         <h1 class="book"><span style="color: #343741;">Book: "<span id="booktitle"></span>", <span id="author"></span></span></h1>
         <h2 class="similar"><span style="color: #51545e;">Similar Books: </span></h2>
 
+        <!--button to return to search page-->
         <div>
             <a href="index.html"><button class="backbtn" type="back">Back to Search</button></a>
         </div>
 
+        <!--display of sample graph-->
         <div>
             <img class="graph" src="graph.jpg"></img>
         </div>
 
+        <!--buttons to move to a page where a dfs or bfs list can be created-->
         <div class="algbtns">
             <h1 class="create"><span style="color: #51545e;">Create List: </span></h1>
             <a href="dfs.html"><button class="dfsbtn">Depth First Search</button></a>
@@ -26,12 +30,7 @@
         </div>
     </div>
 
-    <script>
-        const booktitle = localStorage.getItem('booktitle');
-        const author = localStorage.getItem('author');
-        document.getElementById('booktitle').textContent = booktitle;
-        document.getElementById('author').textContent = author;
-    </script>
+    <script src="indexdata2.js"></script> <!--source to recover data from search page-->
 
 </body>
 </html>
